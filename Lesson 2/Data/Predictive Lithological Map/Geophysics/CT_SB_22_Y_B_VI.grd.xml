@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd ../schemas/iso19139fra/gmd/gmd.xsd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:map="urn:brgm:mapping" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:gco="http://www.isotc211.org/2005/gco">
+	<geosoft xmlns="http://www.geosoft.com/schema/geo">
+		<dataset version="1">
+			<lineage>
+				<process name="gridmask.gx" displaystring="GRIDMASK" user="Iago Sousa Lima Costa" version="Version 9.7 (20191011.50)" date="2020-08-31" time="13:41:42">
+					<parameter name="GRIDMASK::GRDIN" value="..\Projetos 2020\Carajas 2020\Kit Geofisica Carajas\Oasis Project\Dados 250k\CT_Carajas_250k_SIRGAS2000.grd(GRD)" type="string"/>
+					<parameter name="GRIDMASK::GRDOUT" value=".\Geophysical Data\CT_SB_22_Y_B_VI.grd(GRD)" type="string"/>
+					<parameter name="GRIDMASK::MASKOPT" value="OUTSIDE" type="string"/>
+					<parameter name="GRIDMASK::POLY" value=".\Shapes\SB_22_Y_B_VI.ply" type="string"/>
+					<parameter name="GRIDMASK::RESIZE" value="YES" type="string"/>
+					<source name="c:\Users\iago.costa\Desktop\minicurso usp - oasis montaj\__gmasktmp.grd" type="GRID">
+						<lineage>
+							<process name="gridmask.gx" displaystring="GRIDMASK" user="Iago Sousa Lima Costa" version="Version 9.7 (20191011.50)" date="2020-08-31" time="13:41:42">
+								<parameter name="GRIDMASK::GRDIN" value="..\Projetos 2020\Carajas 2020\Kit Geofisica Carajas\Oasis Project\Dados 250k\CT_Carajas_250k_SIRGAS2000.grd(GRD)" type="string"/>
+								<parameter name="GRIDMASK::GRDOUT" value=".\Geophysical Data\CT_SB_22_Y_B_VI.grd(GRD)" type="string"/>
+								<parameter name="GRIDMASK::MASKOPT" value="OUTSIDE" type="string"/>
+								<parameter name="GRIDMASK::POLY" value=".\Shapes\SB_22_Y_B_VI.ply" type="string"/>
+								<parameter name="GRIDMASK::RESIZE" value="YES" type="string"/>
+								<source name="c:\Users\iago.costa\Desktop\Projetos 2020\Carajas 2020\Kit Geofisica Carajas\Oasis Project\Dados 250k\CT_Carajas_250k_SIRGAS2000.grd" type="GRID"/>
+							</process>
+						</lineage>
+					</source>
+					<source name="c:\Users\iago.costa\Desktop\Projetos 2020\Carajas 2020\Kit Geofisica Carajas\Oasis Project\Dados 250k\CT_Carajas_250k_SIRGAS2000.grd" type="GRID">
+						<lineage>
+							<process name="gridrepj.gx" displaystring="Reproject grids" user="Isabelle Cavalcante Correa de Oliveira Serafim" version="Version 9.5 (20181112.55)" date="2020-01-23" time="16:26:13">
+								<parameter name="GRIDREPJ::NEWCELL" value="125" type="double"/>
+								<parameter name="GRIDREPJ::NEWGRID" value=".\Grids Sirgas\Carajas_250k_2020\Finais\CT_Carajas_250k_SIRGAS2000.grd(GRD)" type="string"/>
+								<parameter name="GRIDREPJ::NEWIPJ_XML" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xA;&lt;projection type=&quot;TRANSVERSE_MERCATOR&quot; name=&quot;SIRGAS 2000 / UTM zone 22S&quot; wellknown_epsg=&quot;31982&quot; projection=&quot;UTM zone 22S&quot; ellipsoid=&quot;GRS 1980&quot; datum=&quot;SIRGAS 2000&quot; datumtrf=&quot;SIRGAS 2000 to WGS 84 (1)&quot; datumtrf_epsg=&quot;15894&quot; datumtrf_description=&quot;[SIRGAS 2000] (1m) Latin America - SIRGAS 2000 by country&quot; radius=&quot;6378137&quot; eccentricity=&quot;0.081819191042815806&quot; xmlns=&quot;http://www.geosoft.com/schema/geo&quot;&gt;&#xA;	&lt;shift x=&quot;0&quot; y=&quot;0&quot; z=&quot;0&quot;/&gt;&#xA;	&lt;parameters scale=&quot;0.9996&quot; false_east=&quot;500000&quot; false_north=&quot;10000000&quot; lat_origin=&quot;0&quot; lon_origin=&quot;-51&quot;/&gt;&#xA;	&lt;units name=&quot;m&quot; unit_scale=&quot;1&quot;/&gt;&#xA;&lt;/projection&gt;&#xA;" type="string"/>
+								<parameter name="GRIDREPJ::OLDGRID" value=".\Grids Sirgas\Carajas_250k_2020\Finais\CT_Carajas_250k.GRD(GRD)" type="string"/>
+								<parameter name="GRIDREPJ::OLDIPJ_XML" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xA;&lt;projection type=&quot;TRANSVERSE_MERCATOR&quot; name=&quot;WGS 84 / UTM zone 22S&quot; wellknown_epsg=&quot;32722&quot; projection=&quot;UTM zone 22S&quot; ellipsoid=&quot;WGS 84&quot; datum=&quot;WGS 84&quot; datumtrf=&quot;WGS 84&quot; datumtrf_description=&quot;[WGS 84] World&quot; radius=&quot;6378137&quot; eccentricity=&quot;0.0818191908426215&quot; xmlns=&quot;http://www.geosoft.com/schema/geo&quot;&gt;&#xA;	&lt;shift x=&quot;0&quot; y=&quot;0&quot; z=&quot;0&quot;/&gt;&#xA;	&lt;parameters scale=&quot;0.9996&quot; false_east=&quot;500000&quot; false_north=&quot;10000000&quot; lat_origin=&quot;0&quot; lon_origin=&quot;-51&quot;/&gt;&#xA;	&lt;units name=&quot;m&quot; unit_scale=&quot;1&quot;/&gt;&#xA;&lt;/projection&gt;&#xA;" type="string"/>
+								<parameter name="IPJSET::PROJECTION" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xA;&lt;projection type=&quot;TRANSVERSE_MERCATOR&quot; name=&quot;SIRGAS 2000 / UTM zone 22S&quot; wellknown_epsg=&quot;31982&quot; projection=&quot;UTM zone 22S&quot; ellipsoid=&quot;GRS 1980&quot; datum=&quot;SIRGAS 2000&quot; datumtrf=&quot;SIRGAS 2000 to WGS 84 (1)&quot; datumtrf_epsg=&quot;15894&quot; datumtrf_description=&quot;[SIRGAS 2000] (1m) Latin America - SIRGAS 2000 by country&quot; radius=&quot;6378137&quot; eccentricity=&quot;0.081819191042815806&quot; xmlns=&quot;http://www.geosoft.com/schema/geo&quot;&gt;&#xA;	&lt;shift x=&quot;0&quot; y=&quot;0&quot; z=&quot;0&quot;/&gt;&#xA;	&lt;parameters scale=&quot;0.9996&quot; false_east=&quot;500000&quot; false_north=&quot;10000000&quot; lat_origin=&quot;0&quot; lon_origin=&quot;-51&quot;/&gt;&#xA;	&lt;units name=&quot;m&quot; unit_scale=&quot;1&quot;/&gt;&#xA;&lt;/projection&gt;&#xA;" type="string"/>
+								<source name="c:\Users\isabelle.serafim\documents\Cprm\Carajas\geosoft\Grids Sirgas\Carajas_250k_2020\Finais\CT_Carajas_250k.GRD" type="GRID"/>
+							</process>
+						</lineage>
+					</source>
+				</process>
+			</lineage>
+			<title>CT_SB_22_Y_B_VI</title>
+			<file_format>Geosoft Grid</file_format>
+			<project_name>c:\users\iago.costa\desktop\minicurso usp - oasis montaj\folha_sb_22_y_b_vi.gpf</project_name>
+			<data_created_by>Iago Sousa Lima Costa</data_created_by>
+			<data_creation_date>2020-08-31</data_creation_date>
+			<metadata_created_by>Iago Sousa Lima Costa</metadata_created_by>
+			<metadata_creation_date>2020-08-31</metadata_creation_date>
+			<georeference>
+				<dataextents>
+					<extent2d minx="439875" miny="9226000" maxx="505000" maxy="9286250"/>
+				</dataextents>
+				<projection type="TRANSVERSE_MERCATOR" name="SIRGAS 2000 / UTM zone 22S" wellknown_epsg="31982" projection="UTM zone 22S" ellipsoid="GRS 1980" datum="SIRGAS 2000" datumtrf="SIRGAS 2000 to WGS 84 (1)" datumtrf_epsg="15894" datumtrf_description="[SIRGAS 2000] (1m) Latin America - SIRGAS 2000 by country" radius="6378137" eccentricity="0.081819191042815806">
+					<shift x="0" y="0" z="0"/>
+					<parameters scale="0.9996" false_east="500000" false_north="10000000" lat_origin="0" lon_origin="-51"/>
+					<units name="m" unit_scale="1"/>
+				</projection>
+			</georeference>
+		</dataset>
+	</geosoft>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality>
+			<gmd:lineage>
+				<gmd:LI_Lineage>
+					<gmd:processStep xlink:type="Geosoft Process" xlink:title="gridmask.gx">
+						<gmd:LI_ProcessStep>
+							<gmd:dateTime>
+								<gco:DateTime>2020-08-31T13:41:42</gco:DateTime>
+							</gmd:dateTime>
+							<gmd:processor>
+								<gmd:CI_ResponsibleParty>
+									<gmd:individualName>
+										<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+									</gmd:individualName>
+								</gmd:CI_ResponsibleParty>
+							</gmd:processor>
+							<gmd:source xlink:type="Data Parameter" xlink:role="GRIDMASK::GRDIN" xlink:title="..\Projetos 2020\Carajas 2020\Kit Geofisica Carajas\Oasis Project\Dados 250k\CT_Carajas_250k_SIRGAS2000.grd(GRD)">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="GRIDMASK::GRDOUT" xlink:title=".\Geophysical Data\CT_SB_22_Y_B_VI.grd(GRD)">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="GRIDMASK::MASKOPT" xlink:title="OUTSIDE">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="GRIDMASK::POLY" xlink:title=".\Shapes\SB_22_Y_B_VI.ply">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="GRIDMASK::RESIZE" xlink:title="YES">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Source" xlink:role="GRID" xlink:title="c:\Users\iago.costa\Desktop\minicurso usp - oasis montaj\__gmasktmp.grd">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Source" xlink:role="GRID" xlink:title="c:\Users\iago.costa\Desktop\Projetos 2020\Carajas 2020\Kit Geofisica Carajas\Oasis Project\Dados 250k\CT_Carajas_250k_SIRGAS2000.grd">
+								<gmd:LI_Source/>
+							</gmd:source>
+						</gmd:LI_ProcessStep>
+					</gmd:processStep>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>CT_SB_22_Y_B_VI</gco:CharacterString>
+					</gmd:title>
+					<gmd:collectiveTitle>
+						<gco:CharacterString>c:\users\iago.costa\desktop\minicurso usp - oasis montaj\folha_sb_22_y_b_vi.gpf</gco:CharacterString>
+					</gmd:collectiveTitle>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2020-8-31</gco:Date>
+							</gmd:date>
+						</gmd:CI_Date>
+					</gmd:date>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:resourceFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>Geosoft Grid</gco:CharacterString>
+					</gmd:name>
+				</gmd:MD_Format>
+			</gmd:resourceFormat>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+					</gmd:individualName>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>-51.544353170954345</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>-50.954730854233183</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>-7.0022717502216407</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>-6.4569560662724568</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+			</gmd:individualName>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:dateStamp>
+		<gco:Date>2020-8-31</gco:Date>
+	</gmd:dateStamp>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:codeSpace>
+						<gco:CharacterString>ESRI</gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:code>
+						<gco:CharacterString>PROJCS["SIRGAS_2000_UTM_Zone_22S",GEOGCS["GCS_SIRGAS_2000",DATUM["D_SIRGAS_2000",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",10000000.0],PARAMETER["Central_Meridian",-51.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0],AUTHORITY["EPSG",31982]]</gco:CharacterString>
+					</gmd:code>
+					<gmd:version>
+						<gco:CharacterString>1</gco:CharacterString>
+					</gmd:version>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+</gmd:MD_Metadata>
