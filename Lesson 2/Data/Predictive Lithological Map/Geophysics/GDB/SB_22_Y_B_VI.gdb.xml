@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd ../schemas/iso19139fra/gmd/gmd.xsd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:map="urn:brgm:mapping" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:gco="http://www.isotc211.org/2005/gco">
+	<geosoft xmlns="http://www.geosoft.com/schema/geo">
+		<dataset version="1">
+			<lineage>
+				<process name="geogxnet.dll(Geosoft.GX.NewGDB.NewGDB;Run)" user="Iago Sousa Lima Costa" version="Version 9.7 (20191011.50)" date="2020-08-31" time="20:27:13">
+					<parameter name="CREATE::CHANNELS" value="50" type="integer"/>
+					<parameter name="CREATE::COMPRESSION" value="2" type="string"/>
+					<parameter name="CREATE::LINES" value="200" type="integer"/>
+					<parameter name="CREATE::NAME" value=".\SB_22_Y_B_VI_250_Spatial_Join.gdb" type="string"/>
+					<parameter name="CREATE::PAGESIZE" value="1024" type="string"/>
+				</process>
+				<process name="importarc.gx" displaystring="Import an ArcView Shape file" user="Iago Sousa Lima Costa" version="Version 9.7 (20191011.50)" date="2020-08-31" time="20:27:25">
+					<parameter name="IMPORTARC::DBOUT" value="0" type="integer"/>
+					<parameter name="IMPORTARC::FILES" value=".\Orange_Files\SB_22_Y_B_VI_250_Spatial_Join.shp" type="string"/>
+					<parameter name="IMPORTARC::MAPOUT" value="2" type="integer"/>
+					<parameter name="IMPORTARC::MAPSCALE" value="" type="double"/>
+					<parameter name="IMPORTARC::ORIENT" value="" type="integer"/>
+					<source name="c:\Users\iago.costa\Desktop\minicurso usp - oasis montaj\SB_22_Y_B_VI_250_Spatial_Join.gdb" type="DB"/>
+				</process>
+			</lineage>
+			<title>SB_22_Y_B_VI_250_Spatial_Join</title>
+			<file_format>Geosoft Database</file_format>
+			<project_name>c:\users\iago.costa\desktop\minicurso usp - oasis montaj\folha_sb_22_y_b_vi.gpf</project_name>
+			<data_created_by>Iago Sousa Lima Costa</data_created_by>
+			<data_creation_date>2020-08-31</data_creation_date>
+			<metadata_created_by>Iago Sousa Lima Costa</metadata_created_by>
+			<metadata_creation_date>2020-08-31</metadata_creation_date>
+			<georeference>
+				<projection type="GEOGRAPHIC" name="SIRGAS 2000" ellipsoid="GRS 1980" datum="SIRGAS 2000" wellknown_epsg="4674" datumtrf="SIRGAS 2000 to WGS 84 (1)" datumtrf_epsg="15894" datumtrf_description="[SIRGAS 2000] (1m) Latin America - SIRGAS 2000 by country" radius="6378137" eccentricity="0.081819191042815806">
+					<shift x="0" y="0" z="0"/>
+					<units name="dega" unit_scale="1"/>
+				</projection>
+			</georeference>
+		</dataset>
+	</geosoft>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality>
+			<gmd:lineage>
+				<gmd:LI_Lineage>
+					<gmd:processStep xlink:type="Geosoft Process" xlink:title="geogxnet.dll(Geosoft.GX.NewGDB.NewGDB;Run)">
+						<gmd:LI_ProcessStep>
+							<gmd:dateTime>
+								<gco:DateTime>2020-08-31T20:27:13</gco:DateTime>
+							</gmd:dateTime>
+							<gmd:processor>
+								<gmd:CI_ResponsibleParty>
+									<gmd:individualName>
+										<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+									</gmd:individualName>
+								</gmd:CI_ResponsibleParty>
+							</gmd:processor>
+							<gmd:source xlink:type="Data Parameter" xlink:role="CREATE::CHANNELS" xlink:title="50">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="CREATE::COMPRESSION" xlink:title="2">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="CREATE::LINES" xlink:title="200">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="CREATE::NAME" xlink:title=".\SB_22_Y_B_VI_250_Spatial_Join.gdb">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="CREATE::PAGESIZE" xlink:title="1024">
+								<gmd:LI_Source/>
+							</gmd:source>
+						</gmd:LI_ProcessStep>
+					</gmd:processStep>
+					<gmd:processStep xlink:type="Geosoft Process" xlink:title="importarc.gx">
+						<gmd:LI_ProcessStep>
+							<gmd:dateTime>
+								<gco:DateTime>2020-08-31T20:27:25</gco:DateTime>
+							</gmd:dateTime>
+							<gmd:processor>
+								<gmd:CI_ResponsibleParty>
+									<gmd:individualName>
+										<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+									</gmd:individualName>
+								</gmd:CI_ResponsibleParty>
+							</gmd:processor>
+							<gmd:source xlink:type="Data Parameter" xlink:role="IMPORTARC::DBOUT" xlink:title="0">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="IMPORTARC::FILES" xlink:title=".\Orange_Files\SB_22_Y_B_VI_250_Spatial_Join.shp">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="IMPORTARC::MAPOUT" xlink:title="2">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="IMPORTARC::MAPSCALE" xlink:title="">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="IMPORTARC::ORIENT" xlink:title="">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Source" xlink:role="DB" xlink:title="c:\Users\iago.costa\Desktop\minicurso usp - oasis montaj\SB_22_Y_B_VI_250_Spatial_Join.gdb">
+								<gmd:LI_Source/>
+							</gmd:source>
+						</gmd:LI_ProcessStep>
+					</gmd:processStep>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>SB_22_Y_B_VI_250_Spatial_Join</gco:CharacterString>
+					</gmd:title>
+					<gmd:collectiveTitle>
+						<gco:CharacterString>c:\users\iago.costa\desktop\minicurso usp - oasis montaj\folha_sb_22_y_b_vi.gpf</gco:CharacterString>
+					</gmd:collectiveTitle>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2020-8-31</gco:Date>
+							</gmd:date>
+						</gmd:CI_Date>
+					</gmd:date>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:resourceFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>Geosoft Database</gco:CharacterString>
+					</gmd:name>
+				</gmd:MD_Format>
+			</gmd:resourceFormat>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+					</gmd:individualName>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>Iago Sousa Lima Costa</gco:CharacterString>
+			</gmd:individualName>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:dateStamp>
+		<gco:Date>2020-8-31</gco:Date>
+	</gmd:dateStamp>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:codeSpace>
+						<gco:CharacterString>ESRI</gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:code>
+						<gco:CharacterString>GEOGCS["GCS_SIRGAS_2000",DATUM["D_SIRGAS_2000",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],AUTHORITY["EPSG",4674]]</gco:CharacterString>
+					</gmd:code>
+					<gmd:version>
+						<gco:CharacterString>1</gco:CharacterString>
+					</gmd:version>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+</gmd:MD_Metadata>
